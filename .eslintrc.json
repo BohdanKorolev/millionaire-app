@@ -7,17 +7,40 @@
   ],
   "rules": {
     "react/react-in-jsx-scope": "off",
-    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "react/jsx-filename-extension": [
       "error",
-      { "extensions": [".tsx", ".jsx"] }
+      {
+        "extensions": [
+          ".tsx",
+          ".jsx"
+        ]
+      }
     ],
     "import/prefer-default-export": "off",
-    "no-undef": "off"
+    "no-undef": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never",
+        "tsx": "never"
+      }
+    ]
   },
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
     }
   }
 }

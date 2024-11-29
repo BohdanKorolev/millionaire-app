@@ -1,0 +1,48 @@
+[
+  {
+    "id": 1,
+    "question": "Which is the largest planet in the Solar System?",
+    "answers": [
+      {
+        "text": "Earth",
+        "isCorrect": false
+      },
+      {
+        "text": "Mars",
+        "isCorrect": false
+      },
+      {
+        "text": "Jupiter",
+        "isCorrect": true
+      },
+      {
+        "text": "Venus",
+        "isCorrect": false
+      }
+    ],
+    "reward": 100
+  },
+  {
+    "id": 2,
+    "question": "What is the capital of France?",
+    "answers": [
+      {
+        "text": "Berlin",
+        "isCorrect": false
+      },
+      {
+        "text": "Madrid",
+        "isCorrect": false
+      },
+      {
+        "text": "Paris",
+        "isCorrect": true
+      },
+      {
+        "text": "Rome",
+        "isCorrect": false
+      }
+    ],
+    "reward": 200
+  }
+]
