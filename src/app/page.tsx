@@ -1,11 +1,12 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
+import { JSX } from 'react';
 
-export default function Home() {
+export default function Home(): JSX.Element {
   const router = useRouter();
 
-  const startGame = () => {
+  const startGame = (): void => {
     router.push('/game');
   };
 

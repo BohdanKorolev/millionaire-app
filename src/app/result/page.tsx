@@ -1,10 +1,10 @@
 'use client';
 
-import { useSearchParams } from 'next/navigation';
+import { JSX } from 'react';
+import { useGame } from '@/common/context/GameContext';
 
-export default function Result() {
-  const searchParams = useSearchParams();
-  const score = searchParams.get('score') || '0';
+export default function Result(): JSX.Element {
+  const { score } = useGame();
 
   return (
     <div>
