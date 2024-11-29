@@ -12,15 +12,18 @@ export default function Game() {
   const currentQuestion = questions[currentQuestionIndex];
 
   const handleAnswer = (isCorrect: boolean, reward: number) => {
+    let updatedScore = score;
+
     if (isCorrect) {
-      setScore(score + reward);
+      updatedScore += reward;
+      setScore(updatedScore);
       if (currentQuestionIndex < questions.length - 1) {
         setCurrentQuestionIndex(currentQuestionIndex + 1);
       } else {
-        router.push(`/result?score=${score + reward}`);
+        router.push(`/result?score=${updatedScore}`);
       }
     } else {
-      router.push(`/result?score=${score}`);
+      router.push(`/result?score=${updatedScore}`);
     }
   };
 
