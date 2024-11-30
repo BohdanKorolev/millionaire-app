@@ -3,6 +3,8 @@
 import { JSX, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { useGame } from '@/common/context/GameContext';
+import QuestionButton from '@/components/QuestionButton/QuestionButton';
+import { getLetterForIndex } from '@/common/utils/getLetterForIndex';
 import questions from '../../common/data/game.config.json';
 
 export default function Game(): JSX.Element {
@@ -32,16 +34,15 @@ export default function Game(): JSX.Element {
     <div>
       <h1>{currentQuestion.question}</h1>
       <div>
-        {currentQuestion.answers.map((answer) => (
-          <button
-            type="button"
+        {currentQuestion.answers.map((answer, index) => (
+          <QuestionButton
             key={answer.text}
+            text={answer.text}
+            indicatorText={getLetterForIndex(index)}
             onClick={() =>
               handleAnswer(answer.isCorrect, currentQuestion.reward)
             }
-          >
-            {answer.text}
-          </button>
+          />
         ))}
       </div>
     </div>

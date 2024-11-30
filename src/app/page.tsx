@@ -2,6 +2,7 @@
 
 import { useRouter } from 'next/navigation';
 import { JSX } from 'react';
+import Button from '@/components/Button/Button';
 
 export default function Home(): JSX.Element {
   const router = useRouter();
@@ -12,14 +13,8 @@ export default function Home(): JSX.Element {
 
   return (
     <div>
-      <main>
-        <section>
-          <h2>Start the Game</h2>
-          <button type="button" onClick={startGame}>
-            Start Game
-          </button>
-        </section>
-      </main>
+      <h1>Who wants to be a millionaire?</h1>
+      <Button text="Start" onClick={startGame} />
     </div>
   );
 }
