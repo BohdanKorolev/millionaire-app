@@ -1,0 +1,48 @@
+:root {
+  /* main colors */
+  --orange-120: #E87928;
+
+  --orange-100: #FF8B37;
+  --green-100: #47D867;
+  --red-100: #EC6259;
+  --black-100: #1C1C21;
+  --white-100: #FFFFFF;
+
+  --orange-80: #FFAC70;
+
+  --black-40: #D0D0D8;
+
+  --orange-5: #FFF3EB;
+  --green-5: #E6FAEA;
+  --red-5: #FDEEED;
+  --black-5: #F5F5F7;
+
+
+  /* main button colors */
+  --main-button-text: var(--white-100);
+  --main-button-bg: var(--orange-100);
+  --main-button-hover-bg: var(--orange-80);
+  --main-button-pressed-bg: var(--orange-120);
+
+
+  /* question button colors */
+  --question-button-bg: var(--white-100);
+  --question-button-number: var(--orange-100);
+  --question-button-text: var(--black-100);
+
+  --question-button-hover-border: var(--orange-100);
+
+  --question-button-selected-bg: var(--orange-120);
+  --question-button-selected-border: var(--orange-120);
+
+  --question-button-correct-bg: var(--green-5);
+  --question-button-correct-border: var(--green-100);
+
+  --question-button-wrong-bg: var(--red-5);
+  --question-button-wrong-border: var(--red-100);
+
+
+  /* font sizes */
+  --big-font-size: 3.5rem;
+
+}

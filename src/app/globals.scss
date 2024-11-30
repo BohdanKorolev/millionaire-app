@@ -1,2 +1,6 @@
-@import 'styles/reset';
-@import 'styles/variables';
+@import '@/common/styles/reset';
+@import '@/common/styles/variables';
+
+html, body, main {
+  height: 100%;
+}
