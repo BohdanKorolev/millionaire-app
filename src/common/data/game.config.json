@@ -51,7 +51,7 @@
     "answers": [
       {
         "text": "One",
-        "isCorrect": false
+        "isCorrect": true
       },
       {
         "text": "Five",

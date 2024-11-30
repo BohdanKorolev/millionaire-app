@@ -11,25 +11,20 @@ import styles from './game.module.scss';
 
 export default function Game(): JSX.Element {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const { score, setScore } = useGame();
+  const { setScore } = useGame();
   const router = useRouter();
 
   const currentQuestion = questions[currentQuestionIndex];
 
   const handleAnswer = (isCorrect: boolean, reward: string): void => {
-    let updatedScore = score;
-
     if (isCorrect) {
-      updatedScore = reward;
-      setScore(updatedScore);
+      setScore(reward);
       if (currentQuestionIndex < questions.length - 1) {
         setCurrentQuestionIndex(currentQuestionIndex + 1);
       } else {
-        alert('Congratulations! You have completed the game.');
         router.push(`/result`);
       }
     } else {
-      alert('Game Over!');
       router.push(`/result`);
     }
   };
