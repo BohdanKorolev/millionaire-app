@@ -10,9 +10,9 @@ import {
 } from 'react';
 
 type GameContextType = {
-  score: number;
+  score: string;
   // eslint-disable-next-line no-unused-vars
-  setScore: (score: number) => void;
+  setScore: (score: string) => void;
 };
 
 const GameContext = createContext<GameContextType | undefined>(undefined);
@@ -22,7 +22,7 @@ export function GameProvider({
 }: {
   children: ReactNode;
 }): JSX.Element {
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState('');
 
   const value = useMemo(() => ({ score, setScore }), [score]);
 

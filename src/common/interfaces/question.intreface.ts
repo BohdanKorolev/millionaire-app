@@ -1,8 +1,8 @@
-import { Answer } from '@/common/interfaces/answer.interface';
+import { IAnswer } from '@/common/interfaces/answer.interface';
 
-export interface Question {
+export interface IQuestion {
   id: number;
   question: string;
-  answers: Answer[];
-  reward: number;
+  answers: IAnswer[];
+  reward: string;
 }

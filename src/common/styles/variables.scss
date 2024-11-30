@@ -21,28 +21,38 @@
   /* main button colors */
   --main-button-text: var(--white-100);
   --main-button-bg: var(--orange-100);
-  --main-button-hover-bg: var(--orange-80);
-  --main-button-pressed-bg: var(--orange-120);
+  --main-button-bg-hover: var(--orange-80);
+  --main-button-bg-pressed: var(--orange-120);
 
 
   /* question button colors */
-  --question-button-bg: var(--white-100);
-  --question-button-number: var(--orange-100);
+  --question-button-indicator: var(--orange-100);
   --question-button-text: var(--black-100);
 
-  --question-button-hover-border: var(--orange-100);
+  --question-button-bg: var(--white-100);
+  --question-button-bg-selected: var(--orange-5);
+  --question-button-bg-correct: var(--green-5);
+  --question-button-bg-wrong: var(--red-5);
 
-  --question-button-selected-bg: var(--orange-120);
-  --question-button-selected-border: var(--orange-120);
+  --question-button-border: var(--black-40);
+  --question-button-border-hover: var(--orange-100);
+  --question-button-border-selected: var(--orange-100);
+  --question-button-border-correct: var(--green-100);
+  --question-button-border-wrong: var(--red-100);
 
-  --question-button-correct-bg: var(--green-5);
-  --question-button-correct-border: var(--green-100);
 
-  --question-button-wrong-bg: var(--red-5);
-  --question-button-wrong-border: var(--red-100);
+  /* question step colors */
+  --question-step-text: var(--black-100);
+  --question-step-text-active: var(--orange-100);
+  --question-step-text-disabled: var(--black-40);
+
+  --question-step-border: var(--black-40);
+  --question-step-border-active: var(--orange-100);
 
 
   /* font sizes */
-  --big-font-size: 3.5rem;
+  --heading-font-size: 3.5rem;
+  --question-font-size: 2rem;
+  --utils-font-size: 1.25rem
 
 }

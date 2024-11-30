@@ -1,0 +1,109 @@
+.button {
+  position: relative;
+  max-width: 405px;
+  max-height: 72px;
+  border: none;
+  background-color: unset;
+  padding: 1.5rem 3rem;
+  cursor: pointer;
+  text-align: left;
+
+  &__svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  &__text {
+    position: relative;
+    z-index: 2;
+    font-weight: 400;
+    font-size: var(--utils-font-size);
+    line-height: 116%;
+
+    &__indicator {
+      margin-right: 0.5rem;
+      color: var(--orange-100);
+    }
+  }
+
+  .svg {
+    &__body {
+      transition: fill 0.3s ease, stroke 0.3s ease;
+      stroke: var(--question-button-border);
+      fill: var(--question-button-bg);
+    }
+
+    &__hands {
+      transition: stroke 0.3s ease;
+      stroke: var(--question-button-border);
+    }
+  }
+
+  &:hover {
+    .svg {
+      &__body {
+        stroke: var(--question-button-border-hover);
+      }
+
+      &__hands {
+        stroke: var(--question-button-border-hover);
+      }
+    }
+  }
+
+  &:active {
+    .svg {
+      &__body {
+        fill: var(--question-button-bg-selected);
+        stroke: var(--question-button-border-selected);
+      }
+
+      &__hands {
+        stroke: var(--question-button-border-selected);
+      }
+    }
+  }
+
+  &_active {
+    .svg {
+      &__body {
+        fill: var(--question-button-bg-selected);
+        stroke: var(--question-button-border-selected);
+      }
+
+      &__hands {
+        stroke: var(--question-button-border-selected);
+      }
+    }
+  }
+
+  &_correct {
+    .svg {
+      &__body {
+        fill: var(--question-button-bg-correct);
+        stroke: var(--question-button-border-correct);
+      }
+
+      &__hands {
+        stroke: var(--question-button-border-correct);
+      }
+    }
+  }
+
+  &_wrong {
+    .svg {
+      &__body {
+        fill: var(--question-button-bg-wrong);
+        stroke: var(--question-button-border-wrong);
+      }
+
+      &__hands {
+        stroke: var(--question-button-border-wrong);
+      }
+    }
+  }
+}

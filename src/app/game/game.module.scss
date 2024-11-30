@@ -1,0 +1,40 @@
+.game {
+  height: inherit;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 367px;
+  background-color: var(--black-5);
+
+  &__content {
+    height: inherit;
+    display: grid;
+    grid-template-rows: 3fr 1fr;
+    box-sizing: border-box;
+    padding: 10% 10% 8% 8%;
+
+    &__text {
+      font-size: var(--question-font-size);
+      font-weight: 600;
+      line-height: 116%;
+    }
+
+    &__btns {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 1rem;
+
+      & > * {
+        flex: 0 0 50%;
+      }
+    }
+  }
+
+  &__rewards {
+    height: inherit;
+    background-color: var(--white-100);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+}
