@@ -62,8 +62,8 @@
         "isCorrect": false
       },
       {
-        "text": "Five",
-        "isCorrect": true
+        "text": "Four",
+        "isCorrect": false
       }
     ],
     "reward": "$2,000"
