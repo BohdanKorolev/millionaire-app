@@ -4,10 +4,14 @@ import { useRouter } from 'next/navigation';
 import { JSX } from 'react';
 import Button from '@/components/Button/Button';
 import Image from 'next/image';
+import { useGame } from '@/common/context/GameContext';
 import styles from './page.module.scss';
 
 export default function Home(): JSX.Element {
   const router = useRouter();
+  const { setScore } = useGame();
+
+  setScore('');
 
   const startGame = (): void => {
     router.push('/game');
