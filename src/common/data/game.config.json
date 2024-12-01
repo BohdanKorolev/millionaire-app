@@ -12,12 +12,12 @@
         "isCorrect": false
       },
       {
-        "text": "Jupiter",
-        "isCorrect": true
-      },
-      {
         "text": "Venus",
         "isCorrect": false
+      },
+      {
+        "text": "Jupiter",
+        "isCorrect": true
       }
     ],
     "reward": "$500"
@@ -27,16 +27,16 @@
     "question": "What is the capital of France?",
     "answers": [
       {
+        "text": "Paris",
+        "isCorrect": true
+      },
+      {
         "text": "Berlin",
         "isCorrect": false
       },
       {
         "text": "Madrid",
         "isCorrect": false
-      },
-      {
-        "text": "Paris",
-        "isCorrect": true
       },
       {
         "text": "Rome",
@@ -54,11 +54,15 @@
         "isCorrect": true
       },
       {
+        "text": "Two",
+        "isCorrect": true
+      },
+      {
         "text": "Five",
         "isCorrect": false
       },
       {
-        "text": "Two",
+        "text": "Five",
         "isCorrect": true
       }
     ],
@@ -77,12 +81,12 @@
         "isCorrect": false
       },
       {
-        "text": "Pacific Ocean",
-        "isCorrect": true
-      },
-      {
         "text": "Arctic Ocean",
         "isCorrect": false
+      },
+      {
+        "text": "Pacific Ocean",
+        "isCorrect": true
       }
     ],
     "reward": "$4,000"
@@ -100,12 +104,12 @@
         "isCorrect": false
       },
       {
-        "text": "William Shakespeare",
-        "isCorrect": true
-      },
-      {
         "text": "Mark Twain",
         "isCorrect": false
+      },
+      {
+        "text": "William Shakespeare",
+        "isCorrect": true
       }
     ],
     "reward": "$8,000"
@@ -119,12 +123,12 @@
         "isCorrect": false
       },
       {
-        "text": "San Marino",
-        "isCorrect": false
-      },
-      {
         "text": "Vatican City",
         "isCorrect": true
+      },
+      {
+        "text": "San Marino",
+        "isCorrect": false
       },
       {
         "text": "Liechtenstein",
@@ -138,11 +142,11 @@
     "question": "There are 2 sheep. One of them is a sheep. Who is the other?",
     "answers": [
       {
-        "text": "Who",
+        "text": "Bull",
         "isCorrect": false
       },
       {
-        "text": "Moose",
+        "text": "Who",
         "isCorrect": false
       },
       {
@@ -150,7 +154,7 @@
         "isCorrect": true
       },
       {
-        "text": "Bull",
+        "text": "Moose",
         "isCorrect": false
       }
     ],
@@ -160,6 +164,10 @@
     "id": 8,
     "question": "Who painted the Mona Lisa?",
     "answers": [
+      {
+        "text": "Claude Monet",
+        "isCorrect": false
+      },
       {
         "text": "Vincent van Gogh",
         "isCorrect": false
@@ -171,10 +179,6 @@
       {
         "text": "Leonardo da Vinci",
         "isCorrect": true
-      },
-      {
-        "text": "Claude Monet",
-        "isCorrect": false
       }
     ],
     "reward": "$64,000"
@@ -188,12 +192,12 @@
         "isCorrect": false
       },
       {
-        "text": "Yangtze River",
-        "isCorrect": false
-      },
-      {
         "text": "Amazon River",
         "isCorrect": true
+      },
+      {
+        "text": "Yangtze River",
+        "isCorrect": false
       },
       {
         "text": "Mississippi River",
@@ -215,12 +219,12 @@
         "isCorrect": false
       },
       {
-        "text": "Au",
-        "isCorrect": true
-      },
-      {
         "text": "Fe",
         "isCorrect": false
+      },
+      {
+        "text": "Au",
+        "isCorrect": true
       }
     ],
     "reward": "$250,000"
@@ -230,16 +234,16 @@
     "question": "What is the capital of Japan?",
     "answers": [
       {
+        "text": "Tokyo",
+        "isCorrect": true
+      },
+      {
         "text": "Seoul",
         "isCorrect": false
       },
       {
         "text": "Beijing",
         "isCorrect": false
-      },
-      {
-        "text": "Tokyo",
-        "isCorrect": true
       },
       {
         "text": "Kyoto",
@@ -261,12 +265,12 @@
         "isCorrect": false
       },
       {
-        "text": "Lion",
-        "isCorrect": true
-      },
-      {
         "text": "Giraffe",
         "isCorrect": false
+      },
+      {
+        "text": "Lion",
+        "isCorrect": true
       }
     ],
     "reward": "$1,000,000"
