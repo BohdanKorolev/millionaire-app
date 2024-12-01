@@ -1,4 +1,5 @@
-export function getLetterForIndex(index: number): string {
+export function getLetterForIndex(i: number): string {
+  let index = i;
   const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
   const { length } = alphabet;
   let letter = '';
