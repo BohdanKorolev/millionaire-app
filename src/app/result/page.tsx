@@ -9,21 +9,22 @@ import styles from './result.module.scss';
 
 export default function Result(): JSX.Element {
   const router = useRouter();
-  const { score } = useGame();
+  const { score, setScore } = useGame();
 
   useEffect(() => {
     if (!score) {
-      router.replace('/');
+      // router.replace('/');
     }
   }, [score, router]);
 
   const restartGame = (): void => {
     router.push('/');
+    setScore('');
   };
 
   return (
     <div className={styles.result}>
-      <div className={styles.result__contatiner}>
+      <div className={`container ${styles.result__contatiner}`}>
         <div className={styles.result__image}>
           <Image
             src="/fingers.webp"
@@ -35,7 +36,7 @@ export default function Result(): JSX.Element {
         <div className={styles.result__content}>
           <div>
             <p className={styles.result__subtitle}>Total score:</p>
-            <h2 className={styles.result__title}>{score}</h2>
+            <h2 className={styles.result__title}>{score || '$1,000,000'}</h2>
           </div>
           <Button text="Try Again" onClick={restartGame} />
         </div>
